@@ -24,7 +24,8 @@ sudo chown -R www-data:www-data $media_path/owncloud/data
 echo "Copying owncloud to apache web server..."
 
 sudo cp -r /tmp/owncloud $dir_owncloud
-#sudo rm -rf /tmp/owncloud
+sudo rm -rf /tmp/owncloud
+sudo rm /tmp/owncloud-8.2.1.tar.bz2
 
 echo "Setting permissions..."
 
