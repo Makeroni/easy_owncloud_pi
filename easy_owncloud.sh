@@ -16,21 +16,21 @@ if [ ! -d "$media_path/owncloud" ]; then
 fi;
 
 if [ ! -d "$media_path/owncloud/data" ]; then
-    sudo mkdir $media_path/owncloud/data
+    sudo mkdir "$media_path/owncloud/data"
 fi;
 
 sudo chown -R www-data:www-data $media_path/owncloud/data
 
 echo "Copying owncloud to apache web server..."
 
-sudo cp -r /tmp/owncloud $dir_owncloud
+sudo cp -r /tmp/owncloud "$dir_owncloud"
 sudo rm -rf /tmp/owncloud
 sudo rm /tmp/owncloud-8.2.1.tar.bz2
 
 echo "Setting permissions..."
 
-sudo chown -R www-data:www-data $dir_owncloud/owncloud
-sudo chown -R www-data:www-data $media_path/owncloud
+sudo chown -R www-data:www-data "$dir_owncloud/owncloud"
+sudo chown -R www-data:www-data "$media_path/owncloud"
 
 echo "Reloading web server..."
 sudo service apache2 restart
