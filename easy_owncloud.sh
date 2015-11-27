@@ -21,7 +21,7 @@ echo "Type your apache2 web directory and press [ENTER]: " && read dir_owncloud
 echo "Type the path where you wan to place your shared data and press [ENTER]: " && read media_path
 
 echo "Downloading and uncompressing owncloud..."
-cd /tmp && tar xvf owncloud-8.2.1.tar.bz2
+tar xvf owncloud-8.2.1.tar.bz2
 
 if [ ! -d "$media_path/owncloud" ]; then
     sudo mkdir "$media_path/owncloud"
