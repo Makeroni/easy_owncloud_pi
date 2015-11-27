@@ -34,9 +34,8 @@ fi;
 
 echo "Copying owncloud to apache web server..."
 
-sudo cp -r /tmp/owncloud "$dir_owncloud"
-sudo rm -rf /tmp/owncloud
-sudo rm /tmp/owncloud-8.2.1.tar.bz2
+sudo cp -r owncloud/ "$dir_owncloud"
+sudo rm -rf owncloud/
 
 echo "Setting permissions..."
 
