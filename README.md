@@ -11,7 +11,7 @@ chmod +x easy_owncloud.sh
 ./easy_owncloud.sh
 ````
 
-The script will do all the magic to install Owncloud in your RPi, you will be ask to enter your apache2 webserver directory and the path where you want to place your owncloud folder:
+The script will do all the black magic/voodoo to install Owncloud in your RPi, you will be ask to enter your apache2 webserver directory and the path where you want to place your owncloud folder:
 
 If your webserver document are placed in /var/www/webserver and you have an external disk at /media/Seagate, then you can place the path this way:
 
