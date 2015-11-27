@@ -4,8 +4,8 @@ echo ""
 echo "Installing packages..."
 sudo apt-get update && sudo apt-get install -y apache2 php5 php5-json php5-gd php5-sqlite curl libcurl3 libcurl3-dev php5-curl php5-common php-xml-parser
 
-echo "Type your apache2 web directory and press [ENTER]:" && read dir_owncloud
-echo "Type the path where you wan to place your shared data and press [ENTER]:" && read media_path
+echo "Type your apache2 web directory and press [ENTER]: " && read dir_owncloud
+echo "Type the path where you wan to place your shared data and press [ENTER]: " && read media_path
 
 echo "Downloading and uncompressing owncloud..."
 OWNCLOUD_FILE="owncloud-8.2.1.tar.bz2"
