@@ -8,8 +8,8 @@ echo "Type your apache2 web directory and press [ENTER]:" && read dir_owncloud
 echo "Type the path where you wan to place your shared data and press [ENTER]:" && read media_path
 
 echo "Downloading and uncompressing owncloud..."
-URL_OWNCLOUD="https://raw.githubusercontent.com/Makeroni/easy_owncloud_pi/master/owncloud-8.2.1.tar.bz2"
-cd /tmp && wget $URL_OWNCLOUD && tar xvf owncloud-8.2.1.tar.bz2 
+OWNCLOUD_FILE="owncloud-8.2.1.tar.bz2"
+cd /tmp && wget $OWNCLOUD_FILE && tar xvf owncloud-8.2.1.tar.bz2
 
 if [ ! -d "$media_path/owncloud" ]; then
     sudo mkdir "$media_path/owncloud"
