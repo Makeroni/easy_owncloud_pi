@@ -6,6 +6,7 @@ Create your Ownclod with a bash script.
 Log in your Raspberry Pi and start the script:
 
 ````
+git clone https://github.com/Makeroni/easy_owncloud_pi.git && cd easy_owncloud_pi
 chmod +x easy_owncloud.sh
 ./easy_owncloud.sh
 ````
