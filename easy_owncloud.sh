@@ -48,7 +48,7 @@ sudo chown -R www-data:www-data "$dir_owncloud/owncloud"
 sudo chown -R www-data:www-data "$media_path/owncloud"
 sudo chown -R www-data:www-data "$media_path/owncloud/data"
 
-# upload up to 6GB data
+# upload files up to 6GB data
 post_max_size=6000M
 sed -i 's/post_max_size = .*/post_max_size = '${post_max_size}'/' /etc/php5/apache2/php.ini
 
