@@ -16,7 +16,7 @@ The script will do all the black magic/voodoo to install Owncloud in your RPi, y
 If your webserver document are placed in /var/www/webserver and you have an external disk at /media/Seagate, then you can place the path this way:
 
 ````
-Type your apache2 web directory and press [ENTER]:
+Type your apache2 web directory and press [ENTER] (default /var/www):
 /var/www/webserver
 Type the path where you wan to place your shared data and press [ENTER]:
 /media/Seagate
