@@ -14,8 +14,12 @@
 # Install Owncloud into Raspberry Pi with few touches
 ##############################
 
-echo "Type your apache2 web directory and press [ENTER]: " && read dir_owncloud
+echo "Type your apache2 web directory and press [ENTER] (default /var/www): " && read dir_owncloud
 echo "Type the path where you wan to place your shared data and press [ENTER]: " && read media_path
+
+if  [ -z $dir_owncloud ]; then
+    dir_owncloud="/var/www"
+fi;
 
 echo ""
 echo "Installing packages..."
