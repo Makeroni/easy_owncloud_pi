@@ -15,7 +15,7 @@
 ##############################
 
 echo "Type your apache2 web directory and press [ENTER] (default /var/www): " && read dir_owncloud
-echo "Type the path where you wan to place your shared data and press [ENTER]: " && read media_path
+echo "Type the path where you want to place your shared data and press [ENTER]: " && read media_path
 
 if  [ -z $dir_owncloud ]; then
     dir_owncloud="/var/www"
